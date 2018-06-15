@@ -6,6 +6,8 @@ import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
+import java.util.ArrayList;
+
 public class Main {
 
     /**
@@ -27,7 +29,6 @@ public class Main {
 
     private static String PROXY_HOST = "217.61.106.183" /* proxy host */;
     private static Integer PROXY_PORT = 80 /* proxy port */;
-
 
     public static void main(String[] args) {
 
