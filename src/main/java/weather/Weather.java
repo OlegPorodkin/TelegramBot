@@ -26,7 +26,7 @@ public class Weather {
         model.setPressure(main.getInt("pressure"));
 
         return "Город: " + model.getNameSity() + "\n" +
-                "темпиратура: " + model.getTemp() + " C \n" +
+                "температура: " + model.getTemp() + " C \n" +
                 "давление: " + model.getPressure() + " hpa \n" +
                 "влажность: " + model.getHumidity() + " % \n";
     }

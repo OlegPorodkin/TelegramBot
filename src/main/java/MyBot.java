@@ -30,7 +30,7 @@ public class MyBot extends AbilityBot {
 
         if (message != null && message.hasText()) {
 
-            String msg = message.getText();
+            String msg = message.getText().toLowerCase();
             if (msg.startsWith("/")){
                 if (msg.equals("/help"))sendMsg(message, "При вводе вначале сообщения бот затем название города мжно узнать погоду \n" +
                         "команда /setting находится в разработке.");
