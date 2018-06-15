@@ -24,11 +24,11 @@ public class Main {
      * port - 8081
      * */
 
-    private static String BOT_NAME = "POBot";
-    private static String BOT_TOKEN = "607409929:AAGn4Bj3cNjnR2ZKBkyA0SRwM2aGfIkVo1c" /* your bot's token here */;
+    private static final String BOT_NAME = "POBot";
+    private static final String BOT_TOKEN = "607409929:AAGn4Bj3cNjnR2ZKBkyA0SRwM2aGfIkVo1c" /* your bot's token here */;
 
-    private static String PROXY_HOST = "217.61.106.183" /* proxy host */;
-    private static Integer PROXY_PORT = 80 /* proxy port */;
+    private static final String PROXY_HOST = "217.61.106.183" /* proxy host */;
+    private static final Integer PROXY_PORT = 80 /* proxy port */;
 
     public static void main(String[] args) {
 

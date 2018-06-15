@@ -6,6 +6,7 @@ public class Model {
     private int pressure;
     private double humidity;
 
+
     public String getNameSity() {
         return nameSity;
     }
