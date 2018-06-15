@@ -43,21 +43,6 @@ public class MyBot extends AbilityBot {
                         sendMsg(message, "Город не найден!");
                     }
             }
-
-//            switch (message.getText()) {
-//                case "/help":
-//                    sendMsg(message, "Че надо!");
-//                    break;
-//                case "/setting":
-//                    sendMsg(message, "Что будем настраивать!");
-//                    break;
-//                default:
-//                    try{
-//                        sendMsg(message, Weather.getWeather(message.getText(), model));
-//                    } catch (IOException e) {
-//                        sendMsg(message, "Город не найден!");
-//                    }
-//            }
         }
     }
 
