@@ -25,8 +25,8 @@ public class Main {
     private static String BOT_NAME = "POBot";
     private static String BOT_TOKEN = "607409929:AAGn4Bj3cNjnR2ZKBkyA0SRwM2aGfIkVo1c" /* your bot's token here */;
 
-    private static String PROXY_HOST = "195.80.140.212" /* proxy host */;
-    private static Integer PROXY_PORT = 8081 /* proxy port */;
+    private static String PROXY_HOST = "217.61.106.183" /* proxy host */;
+    private static Integer PROXY_PORT = 80 /* proxy port */;
 
 
     public static void main(String[] args) {
