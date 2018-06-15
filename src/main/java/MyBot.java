@@ -4,7 +4,10 @@ import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
+import weather.Model;
+import weather.Weather;
 
+import java.io.IOException;
 import java.util.List;
 
 public class MyBot extends AbilityBot {
@@ -19,6 +22,7 @@ public class MyBot extends AbilityBot {
 
     public void onUpdatesReceived(List<Update> updates) {
         Message message = updates.get(0).getMessage();
+        Model model = new Model();
 
         if (message != null && message.hasText()) {
             switch (message.getText()) {
@@ -28,6 +32,12 @@ public class MyBot extends AbilityBot {
                 case "/setting":
                     sendMsg(message, "Что будем настраивать!");
                     break;
+                default:
+                    try{
+                        sendMsg(message, Weather.getWeather(message.getText(), model));
+                    } catch (IOException e) {
+                        sendMsg(message, "Город не найден!");
+                    }
             }
         }
     }
@@ -38,7 +48,7 @@ public class MyBot extends AbilityBot {
         sm.setChatId(message.getChatId().toString());
         sm.setReplyToMessageId(message.getMessageId());
         sm.setText(s);
-        try{
+        try {
             sendMessage(sm);
         } catch (TelegramApiException e) {
             e.printStackTrace();
