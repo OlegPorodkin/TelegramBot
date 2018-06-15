@@ -15,15 +15,18 @@ public class Main {
      * ip - 145.239.92.106(Poland)
      * port - 3128
      *
-     * ip - 176.37.169.117(Ukraine)
-     * port - 1080
+     * ip - 109.251.106.8(Ukraine)
+     * port - 8010
+     *
+     * ip - 195.80.140.212(Ukraine)
+     * port - 8081
      * */
 
     private static String BOT_NAME = "POBot";
     private static String BOT_TOKEN = "607409929:AAGn4Bj3cNjnR2ZKBkyA0SRwM2aGfIkVo1c" /* your bot's token here */;
 
-    private static String PROXY_HOST = "217.61.106.183" /* proxy host */;
-    private static Integer PROXY_PORT = 80 /* proxy port */;
+    private static String PROXY_HOST = "195.80.140.212" /* proxy host */;
+    private static Integer PROXY_PORT = 8081 /* proxy port */;
 
 
     public static void main(String[] args) {
