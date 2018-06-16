@@ -19,13 +19,13 @@ public class Weather {
         while (scanner.hasNext()) result += scanner.nextLine();
 
         JSONObject object = new JSONObject(result);
-        model.setNameSity(object.getString("name"));
+        model.setNameCity(object.getString("name"));
         JSONObject main = object.getJSONObject("main");
         model.setTemp(main.getDouble("temp"));
         model.setHumidity(main.getDouble("humidity"));
         model.setPressure(main.getInt("pressure"));
 
-        return "Город: " + model.getNameSity() + "\n" +
+        return "Город: " + model.getNameCity() + "\n" +
                 "температура: " + model.getTemp() + " C \n" +
                 "давление: " + model.getPressure() + " hpa \n" +
                 "влажность: " + model.getHumidity() + " % \n";

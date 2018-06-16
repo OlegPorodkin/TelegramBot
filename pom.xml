@@ -30,6 +30,20 @@
             <version>3.6.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.telegram/telegrambots-meta -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-meta</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.telegram/telegrambotsextensions -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambotsextensions</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+
     </dependencies>
 
 </project>

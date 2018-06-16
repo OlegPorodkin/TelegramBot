@@ -32,8 +32,8 @@ public class MyBot extends AbilityBot {
 
             String msg = message.getText().toLowerCase();
             if (msg.startsWith("/")){
-                if (msg.equals("/help"))sendMsg(message, "При вводе вначале сообщения бот затем название города мжно узнать погоду \n" +
-                        "команда /setting находится в разработке.");
+                if (msg.equals("/help"))sendMsg(message, "- При вводе вначале сообщения бот затем название города можно узнать погоду \n" +
+                        "- Команда /setting находится в разработке.");
             }
             if (msg.startsWith("бот ")){
                 String data[] = msg.split("\\s", 2);

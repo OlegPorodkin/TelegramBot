@@ -1,18 +1,19 @@
 package weather;
 
 public class Model {
-    private String nameSity;
+    private String nameCity;
     private double temp;
     private int pressure;
     private double humidity;
+    private int sunRise;
+    private int sunSet;
 
-
-    public String getNameSity() {
-        return nameSity;
+    public String getNameCity() {
+        return nameCity;
     }
 
-    public void setNameSity(String nameSity) {
-        this.nameSity = nameSity;
+    public void setNameCity(String nameCity) {
+        this.nameCity = nameCity;
     }
 
     public double getTemp() {
